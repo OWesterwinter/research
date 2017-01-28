@@ -1,0 +1,264 @@
+\documentclass[12pt]{article}
+
+\usepackage{natbib}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{footnote}
+\usepackage{threeparttable}
+\usepackage{graphics}
+\usepackage{dcolumn}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage[title]{appendix}
+\usepackage{pdflscape}
+
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage{authblk} 
+
+\usepackage[labelsep=period]{caption}
+
+\newcommand{\tab}{\hspace*{2em}}
+
+\newtheoremstyle{hypothesis}{0.2in}{0.2in}{\upshape}{}{\itshape}{:}{.5em}{}
+\theoremstyle{hypothesis}
+\newtheorem{hypothesis}{\it Hypothesis}
+
+\title{{\bf Online Appendix} \\ \Large{The Complex Structure of Commercial Peace: Contrasting Trade Interdependence, Asymmetry and Multipolarity}}
+
+\author[*]{Erik Gartzke} 
+\author[**]{Oliver Westerwinter} 
+\affil[*]{Department of Political Science, University of California, San Diego} 
+\affil[**]{Department of Political Science, University of St. Gallen} 
+
+\renewcommand\Authands{and}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\appendix
+
+\setcounter{table}{0}
+\renewcommand\thetable{A-\Roman{table}}
+\setcounter{figure}{0}
+\renewcommand\thefigure{A-\Arabic{figure}}
+
+\begin{landscape}
+
+\section{Correlations trade dependence and network variables}
+
+\input{Correlation_Matrix_Trade_Dependency_and_Network_Variables_COPDAB_07022016.tex}
+
+\end{landscape}
+
+\newpage
+
+\section{Summary statistics COPDAB data}
+
+\input{Summary_Statistics_Dependent_and_Independent_Variables_COPDAB_07022016.tex}
+
+\newpage
+
+\section{Summary statistics WEIS Goldstein data}
+
+\input{Summary_Statistics_Dependent_and_Independent_Variables_WEIS_Goldstein_08022016.tex}
+
+\newpage
+
+\section{Description dependent variables COPDAB Data}
+
+\doublespace We use count regression methods to estimate our models \citep{Long:1997,Cameron:2013}. All three dependent variables used in this article are characterized by a large number of zero or ``no event'' observations (see table \ref{tab:summarystatsdv}). The proportion of zero events in our data is about 93 percent for all conflict behavior, about 97 percent for non-militarized conflict, and about 99 percent for militarized conflict. All three types of conflicts are therefore a rare event in our data.
+
+\input{Summary_Statistics_Dependent_Variables_07022016.tex}
+
+Furthermore, the variance of our three dependent variables is many times larger than their means. Rows 1, 3, and 5 in table \ref{tab:summarystatsdv} report the means and variances for our dependent variables. In both the all conflict and militarized conflict counts, there is an extreme outlier dyad-year (North-South Korea, 1950) that experienced much more conflict than the next smaller observation. Even if we exclude this highly conflictual observation, the variance for the all conflict events count variable is still over 45 times larger than its mean. Similarly, even without the extreme case, the variance of the count of militarized conflicts is still more than 60 times higher than its mean. Although smaller for non-militarized conflict, the variance here is still about $6.5$ times larger than the mean. Thus, all three dependent variables exhibit overdispersion \citep[218]{Long:1997}.
+
+We use a zero-inflated negative binomial model to address the overdispersion of our dependent variables \citep{Long:1997,Cameron:2013}. A Poisson model assumes that the conditional mean equals the conditional variance of event counts, something clearly incorrect here \citep[218-223]{Long:1997}. With overdispersion in the data, standard errors will be biased downward, which overestimates the significance of independent variables (\citealp[31]{Cameron:1986}; \citealp[230]{Long:1997}). Allowing the conditional variance to be larger than the conditional mean helps to address this problem. Furthermore, compared to a simple negative binomial model, the zero-inflated regression is better able to deal with excess zero events in the dependent variable because it allows to explicitly model the generation of zero events \citep[242]{Long:1997}.
+
+\newpage
+
+\section{Temporal exponential random graph models}
+
+\doublespace In our main analysis, we use zero-inflated negative binomial regression models to analyze the relationship between dyadic and extra-dyadic dependencies and interdependencies and different types of international conflict. An alternative approach to modeling conflict data is offered by longitudinal network models, such as temporal exponential random graph models (TERGMs) or stochastic actor-oriented models (SAOMs) \citep{Hanneke:2010, Cranmer:2011,Snijders:1996}. These models allow to examine interdependencies among states as a network of states and then estimate the determinants of network structures statistically.
+
+While translating our zero-inflated count model approach into a network model and comparing the results of what are different modeling approaches pose a challenge, in this section we present an exploratory network analysis of our data that uses temporal exponential random graph models (TERGMs). Specifically, we estimate the parsimonious model specification presented in section J of the online appendix using TERGMs. We dichotomize our count dependent variables that capture the annual frequencies of militarized and non-militarized conflicts among nations using a threshold of 1. This means that we create for each type of conflict and each year in our data a binary, undirected dependent network where ties refer to the occurrence of at least one conflict event between two states in a given year. In addition to our independent variables of interest and three exogenous controls for GDP, preference similarity, and geographic distance, we also include endogenous network effects that capture clustering (triangles and 4-cycles) and popularity (2-star) in the militarized and non-militarized conflict event networks. These endogenous network effects have been identified as important drivers of states' conflict behavior in previous analyses \citep{Cranmer:2011}. We also control for the tendency toward nodes without any connections (isolates) in our conflict event networks. The results presented in table \ref{tab:robustnesstergm} are in line with the findings of our main analysis. We also observe a tendency toward local clustering as well as popularity in both the militarized and non-militarized conflict network.
+
+\begin{landscape}
+
+\input{Robustness_COPDAB_tergm_10022016.tex}
+
+\end{landscape}
+
+\newpage
+
+\section{Alternative specifications of zero-inflation model component}
+
+\doublespace In our main analysis, we model the selection of a dyad into zero-only outcomes, i.e. no conflict occurs with certainty, as a function of geographic distance and the lower of the logged monadic GDPs in a dyad. We find that an increase in the geographic distance between two states' capitals makes a dyad more likely to experience zero-conflict events with certainty. By contrast, the higher the lower of the logged monadic GDPs in a dyad, the less likely that dyad is to experience no conflict.
+
+Here, we explore alternative specifications of the zero-inflation component of our models. In particular, we examine whether states' regime types and their preference similarity have an impact on the probability of a dyad to experience zero conflict with certainty. Arguments inspired by the democratic peace may expect that two states are more likely to fight each other as their domestic political regimes become more different \citep{Gartzke:2013}. If this is plausible for the probability of conflict, it may also be reasonable to expect that an increase in the difference of monadic regime types makes a dyad less likely to experience zero conflict with certainty. We explore this possibility by including the absolute difference of monadic regime types in a dyad as covariate in the zero-inflation component of our models. Furthermore, a number of studies show that states with similar preferences are less likely to engage in conflict \citep{Gartzke:1998}. Converseley, preference similarity may have a positive effect on the probability with which states experience no conflict with certainty. We investigate this relationship by including our preference similarity measure based on United Nations General Assembly roll call votes as additional variable in our zero-inflation model.
+
+As table \ref{tabapp:zeroinflationcopdab} shows, the difference in two states' regime types has a consistently negative, though not statistically significant, effect on a dyad's likelihood to experience zero conflict with certainty. By contrast, preference similarity has a positive effect across all models that is statistically significant in model 2 indicating that states with similar preferences have a higher likelihood of experiencing no conflict. Most importantly, these alternative specifications of the zero-inflation component of our zero-inflated negative binomial models do not change the findings of our main analysis.
+
+\input{Robustness_COPDAB_zeroinflation_08022016.tex}
+
+\newpage
+
+\section{Models with population size}
+
+In our main analysis, we use the lower of the two logged monadic GDPs in order to capture the size of the economies of the countries in a dyad and to analyze how these affect conflict. An alternative proxy for country size is a country's population. Here, we re-estimate the models of our main analysis using the lower of the logged monadic population counts in a dyad as indicator for country size instead of the lower of the logged monadic GDPs. As the results reported in table \ref{tabapp:populationcopdab} show, using population instead of GDP, we obtain results that are in line with those of our main analysis.
+
+Importantly, once we use population as proxy for country size, a zero-inflated negative binomial model is no longer preferable compared to a simple negative binomial model, as indicated by the Vuong test. We, therefore, also run the models reported in table  \ref{tabapp:populationcopdab} using a simple negative binomial regression approach.\footnote{Results available from the authors.} This does not change the findings of our main analysis.
+
+\input{Robustness_COPDAB_population_09022016.tex}
+
+\newpage
+
+\section{Alternative measure of preference similarity}
+
+As have many other studies before ours, we use ``S'' scores based on United Nations General Assembly roll call data to capture how similar the preferences of two states are \citep{Broz:2006, Gartzke:1998,Gartzke:2007, Bearce:2007, Savun:2011}. This variable is characterized by more variation than ``S'' scores based on states' alliance portfolios \citep{Signorino:2001} and the temporal domain for which the data are available allows us to keep the loss of observations due to missing data on the preference variable relatively low.
+
+We are, however, aware that this is not the only option available. \citet{Haege:2011}, for example, proposes chance-corrected agreement indices to measure the similarity of foreign policy preferences of states and \citet{Voeten:2000} suggests idealpoint estimates generated using the Nominate algorithm. Both approaches allow for adjusting preference similarity measures for a large number of common absent relationships, such as alliance ties or joint United Nations General Assembly votes, while ``S'' scores treat joint present and absent relationships equally. In order to assess whether the findings of our main analysis are affected by our approach to measuring states' preference similarity, we re-estimate the models of our main analysis using Voeten's idealpoint estimate approach based on United Nations General Assembly roll call data to operationalize state preference similarity. More specifically, we use the absolute difference of two states' ideal point estimates based on United Nations General Assembly roll call data to compute the extent to which two countries differ in their revealed preferences. We expect this variable to be positively associated with the onset of conflict in a dyad. States with more dissimilar ideal point estimates are more likely to experience conflict. As shown in table \ref{tabapp:preferencescopdab}, the results of this analysis are in line with the findings of our main analysis suggesting that our choice with respect to operationalizing state preference similarity does not drive our main findings.
+
+\input{Robustness_COPDAB_preferences_09022016.tex}
+
+\newpage
+
+\section{Missing data}
+
+In our main analysis, we deal with missing information in our data by using list-wise deletion. Here, we re-estimate the models of our main analysis using data where missing information has been imputed using the sample mean for continuous variables and the sample median for binary variables. As can be seen from table \ref{tabapp:meanimputationcopdab}, using the mean imputed data, we obtain results that are in line with the findings of our main analysis.
+
+\input{Robustness_COPDAB_meanimputation_09022016.tex}
+
+\newpage
+
+\section{More parsimonious model specification}
+
+The models in our main analysis include independent variables that previous research has argued and shown to be important factors to understand the occurrence of international conflict. While we present theoretical and empirical justifications for the inclusion of each independent variable in the data section of the article, we also acknowledge that models that include many independent variables have been critized \citep{Achen:2005}. \citet{Achen:2005} in particular argued that econometric models that are specified without the support of a formal model should not contain more than three independent variables. In order to address this criticism, we re-estimate the models of our main analysis inlcuding in addition to the independent variables that capture our hypotheses of interest and the duration component only three control variables; namely, the lower of the logged monadic GDPs, our measure of state preference similarity, and geographic distance. As the results in table \ref{tabapp:fewerivscopdab} show, using this more parsimonious model specification does not affect our main findings.
+
+\input{Robustness_COPDAB_fewerivs_09022016.tex}
+
+\newpage
+
+\section{Alternative operationalizations of regime type variables}
+
+The models in our main analysis include the lower of the monadic regime scores in combination with the difference in regime scores in order to capture the effect of democracy and regime dissimilarity on the occurrence of militarized and non-militarized conflict \citep{Gartzke:2013,Weisiger:2016}. However, this operationalization has been critized \citep{Choi:2015}. In particular, \citet{Choi:2015} argued that using the lower of the monadic regime scores in combination with the higher of the monadic regime scores in a dyad is a more appropriate operationalization. We re-estimate the models of our main analysis in order to examine whether our findings are sensitive to our choice of regime type variables. As table \ref{tabapp:regimetypes} shows, while the alternative operationalization suggests a significant relationship between the lower of the monadic regme types and conflict which is in line with previous research \citep{Choi:2015}, our main findings are not affected.
+
+\input{Robustness_COPDAB_regimetypevars_09022016.tex}
+
+\newpage
+
+%\bibliographystyle{jpr}
+%\bibliography{myref012015_2}
+
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Achen}{Achen}{2005}]{Achen:2005}
+Achen, Christopher~H (2005) Let's put garbage-can regressions and garbage-can
+  probits where they belong.
+\newblock {\em Conflict Management and Peace Science} { 22\/}(4): 327--339.
+
+\bibitem[\protect\citeauthoryear{Bearce \& Bondanella}{Bearce \&
+  Bondanella}{2007}]{Bearce:2007}
+Bearce, David~H  \& Stacy Bondanella (2007) Intergovernmental organizations,
+  socialization, and member-state interest convergence.
+\newblock {\em International Organization} { 61\/}(4): 703--733.
+
+\bibitem[\protect\citeauthoryear{Broz \& Hawes}{Broz \&
+  Hawes}{2006}]{Broz:2006}
+Broz, Lawrence~J  \& Michael~B Hawes (2006) Congressional politics of financing
+  the international monetary fund.
+\newblock {\em International Organization} { 60\/}(2): 367--399.
+
+\bibitem[\protect\citeauthoryear{Cameron \& Trivedi}{Cameron \&
+  Trivedi}{1986}]{Cameron:1986}
+Cameron, Colin~A  \& Pravin~K Trivedi (1986) Econometric models based on count
+  data: Comcomparisons and applications of some estimators and tests.
+\newblock {\em Journal of Applied Econometrics} {\em 1}: 29--53.
+
+\bibitem[\protect\citeauthoryear{Cameron \& Trivedi}{Cameron \&
+  Trivedi}{2013}]{Cameron:2013}
+Cameron, Colin~A  \& Pravin~K Trivedi (2013) {\em { Regression Analysis of
+  Count Data\/} (Second edition ed.).}
+\newblock New York: Cambridge University Press.
+
+\bibitem[\protect\citeauthoryear{Choi}{Choi}{forthcoming}]{Choi:2015}
+Choi, Seung-Whan (forthcoming) A menace to the democratic peace? dyadic and systemic
+  difference.
+\newblock {\em International Studies Quarterly}.
+
+\bibitem[\protect\citeauthoryear{Cranmer \& Desmarais}{Cranmer \&
+  Desmarais}{2011}]{Cranmer:2011}
+Cranmer, Skyler~J  \& Bruce~A Desmarais (2011) Inferential network analysis
+  with exponential random graph models.
+\newblock {\em Political Analysis} { 19\/}(1): 66--86.
+
+\bibitem[\protect\citeauthoryear{Gartzke}{Gartzke}{1998}]{Gartzke:1998}
+Gartzke, Erik (1998) Kant we all just get along?: Motive, opportunity, and the
+  origins of the democratic peace.
+\newblock {\em American Journal of Political Science} { 42\/}(1): 1--27.
+
+\bibitem[\protect\citeauthoryear{Gartzke}{Gartzke}{2007}]{Gartzke:2007}
+Gartzke, Erik (2007) The capitalist peace.
+\newblock {\em American Journal of Political Science} { 51\/}(1): 166--191.
+
+\bibitem[\protect\citeauthoryear{Gartzke \& Weisiger}{Gartzke \&
+  Weisiger}{2013}]{Gartzke:2013}
+Gartzke, Erik  \& Alex Weisiger (2013) Permanent friends? dynamic differences
+  and the democratic peace.
+\newblock {\em International Studies Quarterly} { 57\/}(1): 171--185.
+
+\bibitem[\protect\citeauthoryear{Haege}{Haege}{2011}]{Haege:2011}
+Haege, Frank~M (2011) Choice or circumstance? adjusting measures of foreign
+  policy similarity for chance agreement.
+\newblock {\em Political Analysis} { 19\/}(3): 287--305.
+
+\bibitem[\protect\citeauthoryear{Hanneke, Fu \& Xing}{Hanneke
+  et~al.}{2010}]{Hanneke:2010}
+Hanneke, Steve, Wenjie Fu  \& Eric~D Xing (2010) Discrete temporal models for
+  social networks.
+\newblock {\em Electronic Journal of Statistics} {\em 4}: 585--605.
+
+\bibitem[\protect\citeauthoryear{Long}{Long}{1997}]{Long:1997}
+Long, Scott~J (1997) {\em Regression Models for Categorical and Limited
+  Dependent Variables}.
+\newblock Thousand Oaks: Sage.
+
+\bibitem[\protect\citeauthoryear{Savun \& Tirone}{Savun \&
+  Tirone}{2011}]{Savun:2011}
+Savun, Burcu  \& Daniel~C Tirone (2011) Foreign aid, democratization, and civil
+  conflict: How does democracy aid affect civil conflict?
+\newblock {\em American Journal of Political Science} { 55\/}(2): 233--246.
+
+\bibitem[\protect\citeauthoryear{Signorino \& Ritter}{Signorino \&
+  Ritter}{2001}]{Signorino:2001}
+Signorino, Curtis~S  \& Jeffrey~M Ritter (2001) Tau-b or not tau-b: Measuring
+  the similarity of foreign policy positions.
+\newblock {\em International Studies Quarterly} { 43\/}(1): 115--144.
+
+\bibitem[\protect\citeauthoryear{Snijders}{Snijders}{1996}]{Snijders:1996}
+Snijders, Tom~A~B (1996) Stochastic actor-oriented models for network change.
+\newblock {\em Journal of Mathematical Sociology} { 21\/}(1-2): 149--172.
+
+\bibitem[\protect\citeauthoryear{Voeten}{Voeten}{2000}]{Voeten:2000}
+Voeten, Erik (2000) Clashes in the assembly.
+\newblock {\em International Organization} { 54\/}(2): 185--215.
+
+\bibitem[\protect\citeauthoryear{Weisiger \& Gartzke}{Weisiger \&
+  Gartzke}{forthcoming}]{Weisiger:2016}
+Weisiger, Alex  \& Erik Gartzke (forthcoming) Debating the democratic peace in
+  the international system.
+\newblock {\em International Studies Quarterly}.
+
+\end{thebibliography}
+
+\end{document} 

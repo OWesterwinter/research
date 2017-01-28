@@ -1,0 +1,66 @@
+\begin{table}[htbp]\centering\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Zero-inflated negative binomial regression estimates, dyadic interdependence and asymmetric dependence (COPDAB, 1948-1978)\label{tab1:copdabdyadicmodels}}
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+   &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+   &\multicolumn{1}{c}{All conflict}&\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Non-mil. conflict}\\
+\midrule
+Dependence low&      -1.731         &      -1.463         &       2.923\sym{*}  \\
+   &     (1.282)         &     (8.642)         &     (1.345)         \\
+\addlinespace
+Dependence difference&       0.839\sym{***}&       0.281\sym{*}  &                     \\
+   &    (0.032)         &     (0.118)         &                     \\
+\addlinespace
+Regime type low&      0.026\sym{***}&      0.056\sym{*}  &      0.036\sym{***}\\
+   &   (0.007)         &    (0.026)         &   (0.009)         \\
+\addlinespace
+Difference regime type&      0.053\sym{***}&       0.106\sym{***}&      0.051\sym{***}\\
+   &   (0.006)         &    (0.024)         &   (0.008)         \\
+\addlinespace
+Log GDP/capita low&      0.044\sym{+}  &      -0.321\sym{**} &       0.336\sym{***}\\
+   &    (0.025)         &    (0.098)         &    (0.031)         \\
+\addlinespace
+Log GDP low&       0.233\sym{***}&      -0.139\sym{+}  &      0.059\sym{*}  \\
+   &    (0.017)         &    (0.082)         &    (0.03)         \\
+\addlinespace
+Affinity (UNGA)&      -1.452\sym{***}&      -1.514\sym{***}&      -1.478\sym{***}\\
+   &    (0.052)         &     (0.210)         &    (0.068)         \\
+\addlinespace
+Capability ratio&       1.126\sym{***}&       1.044\sym{*}  &       1.170\sym{***}\\
+   &     (0.125)         &     (0.467)         &     (0.178)         \\
+\addlinespace
+Alliances (all types)&       1.072\sym{***}&       0.240         &       0.770\sym{***}\\
+   &    (0.045)         &     (0.174)         &    (0.061)         \\
+\addlinespace
+Distance&      -0.103\sym{***}&     -0.044         &     -0.042\sym{**} \\
+   &   (0.006)         &    (0.059)         &    (0.014)         \\
+\addlinespace
+Contiguity&       1.441\sym{***}&       3.299\sym{***}&       1.421\sym{***}\\
+   &    (0.064)         &     (0.181)         &    (0.074)         \\
+\addlinespace
+Constant&      -4.905\sym{***}&       1.304         &      -5.384\sym{***}\\
+   &     (0.361)         &     (1.684)         &     (0.649)         \\
+\midrule
+Distance&       0.187\sym{***}&       0.231\sym{***}&       0.270\sym{***}\\
+   &    (0.016)         &    (0.035)         &    (0.016)         \\
+\addlinespace
+Log GDP low&      -1.734\sym{***}&      -0.650         &      -1.062\sym{***}\\
+   &     (0.204)         &     (0.446)         &     (0.122)         \\
+\addlinespace
+Contant&       25.59\sym{***}&       9.933         &       15.63\sym{***}\\
+   &     (3.107)         &     (6.745)         &     (1.817)         \\
+\midrule
+Log $\alpha$&       1.900\sym{***}&       3.222\sym{***}&       2.049\sym{***}\\
+   &    (0.025)         &     (0.321)         &    (0.063)         \\
+Vuong $(z)$&        8.81             &           2.11          &           6.32          \\
+Likelihood ratio $\chi^{2}$&     21,434.2\sym{***}         &      2,794.0\sym{***}         &      8,188.6\sym{***}         \\
+Log likelihood &    -51,403.686      &         -4,492.353      &       -20,096.432        \\
+McFadden's pseudo R$^{2}$&         0.172            &     0.234      &           0.168        \\
+Observations&      145,903         &      145,903         &      145,903         \\
+\bottomrule
+\multicolumn{4}{l}{\scriptsize Robust standard errors in parentheses. Coefficients of ``peace years''}\\
+\multicolumn{4}{l}{\scriptsize and splines not reported. All significance tests two-tailed.}\\
+\multicolumn{4}{l}{\scriptsize \sym{+} \(p<0.10\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\).}\\
+\end{tabular}
+\end{table}

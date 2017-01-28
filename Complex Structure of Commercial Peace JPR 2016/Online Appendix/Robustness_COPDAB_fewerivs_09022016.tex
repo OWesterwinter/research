@@ -1,0 +1,59 @@
+\begin{table}[htbp]\centering\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Robustness analysis stripped-down model (COPDAB, 1948-1978) \label{tabapp:fewerivscopdab}}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+   &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+   &\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Non.-mil. conflict}&\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Mil. conflict}\\
+\midrule
+Dependence low&      -1.787         &       6.167\sym{*}  &      -0.284         &      -1.657         \\
+   &     (6.758)         &     (2.692)         &     (6.360)         &     (5.774)         \\
+\addlinespace
+Dependence difference&       0.245\sym{*}  &                     &       0.733\sym{***}&       0.942\sym{***}\\
+   &     (0.115)         &                     &     (0.214)         &     (0.246)         \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &      0.017\sym{***}&                     \\
+more dependent state   &                     &                     &     (0.005)         &                     \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &     -0.012\sym{**} &                     \\
+dependencies more dependent state   &                     &                     &     (0.004)         &                     \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &                     &      0.013\sym{***}\\
+less dependent state   &                     &                     &                     &     (0.003)         \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &                     &    -0.01\sym{***}\\
+dependencies less dependent state   &                     &                     &                     &     (0.003)         \\
+\addlinespace
+Log GDP low&     -0.092         &      0.022         &      -0.146         &      0.058         \\
+   &     (0.097)         &     (0.029)         &     (0.198)         &     (0.072)         \\
+\addlinespace
+Affinity (UNGA) &      -0.925\sym{***}&      -1.262\sym{***}&      -0.970\sym{***}&      -1.015\sym{***}\\
+   &     (0.226)         &     (0.066)         &     (0.205)         &     (0.224)         \\
+\addlinespace
+Distance&      -0.218\sym{***}&     -0.088\sym{***}&      -0.174\sym{***}&      -0.334\sym{***}\\
+   &     (0.051)         &     (0.012)         &     (0.041)         &     (0.025)         \\
+\addlinespace
+Constant&       1.968         &      -0.127         &       2.340         &      -1.481         \\
+   &     (1.715)         &     (0.531)         &     (3.106)         &     (1.285)         \\
+\midrule
+Distance&       0.225\sym{***}&       0.224\sym{***}&       0.238\sym{***}&       0.253\sym{***}\\
+   &     (0.029)         &     (0.012)         &     (0.037)         &     (0.044)         \\
+\addlinespace
+Log GDP low&      -0.601\sym{+}  &      -0.869\sym{***}&      -0.424         &      -3.087\sym{***}\\
+   &     (0.355)         &     (0.057)         &     (0.403)         &     (0.468)         \\
+\addlinespace
+Constant&       9.886\sym{+}  &       13.56\sym{***}&       7.410         &       47.82\sym{***}\\
+   &     (5.240)         &     (0.841)         &     (5.966)         &     (7.210)         \\
+\midrule
+Log $\alpha$&       3.625\sym{***}&       2.180\sym{***}&       3.186\sym{***}&       4.195\sym{***}\\
+   &     (0.471)         &     (0.073)         &     (0.707)         &     (0.088)         \\
+Vuong $(z)$&          2.77           &            7.89           &         2.93             &        5.13              \\
+Likelihood ratio $\chi^{2}$&      2,234.1\sym{***}         &      6,914.2\sym{***}         &      2,276.3\sym{***}         &      2,287.7\sym{***}         \\
+Log likelihood&               -4,895.289      &             -21,242.154         &       -4,874.217               &         -4,868.491             \\
+McFadden's pseudo R$^{2}$&         0.183             &        0.139              &         0.187             &              0.188        \\
+Observations&      156,134         &      156,134         &      156,134         &      156,134         \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize Robust standard errors in parentheses. Coefficients of ``peace years'' and splines not reported.}\\
+\multicolumn{5}{l}{\scriptsize All significance tests two-tailed. \sym{+} \(p<0.10\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\).}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,83 @@
+\begin{table}[htbp]\centering\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Robustness analysis alternative specification zero-inflation (COPDAB, 1948-1978) \label{tabapp:zeroinflationcopdab}}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+   &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+   &\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Non.-mil. conflict}&\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Mil. conflict}\\
+\midrule
+Dependence low&      -2.421         &       2.378\sym{+}  &      -0.998         &      -0.999         \\
+   &     (8.425)         &     (1.340)         &     (7.512)         &     (8.354)         \\
+\addlinespace
+Dependence difference&       0.258\sym{*}  &                     &       0.655\sym{**} &       0.739\sym{**} \\
+   &     (0.111)         &                     &     (0.244)         &     (0.257)         \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &      0.015\sym{***}&                     \\
+more dependent state   &                     &                     &     (0.004)         &                     \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &    -0.01\sym{*}  &                     \\
+dependencies more dependent state   &                     &                     &     (0.005)         &                     \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &                     &      0.012\sym{***}\\
+ less dependent state  &                     &                     &                     &     (0.002)         \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &                     &    -0.007\sym{**} \\
+dependencies less dependent state   &                     &                     &                     &     (0.003)         \\
+\addlinespace
+Regime type low&      0.057\sym{*}  &      0.034\sym{***}&      0.055\sym{*}  &      0.05\sym{+}  \\
+   &     (0.026)         &     (0.009)         &     (0.026)         &     (0.026)         \\
+\addlinespace
+Regime type difference&       0.100\sym{*}  &      0.047\sym{***}&      0.067         &       0.105\sym{***}\\
+   &     (0.050)         &     (0.013)         &     (0.059)         &     (0.026)         \\
+\addlinespace
+Log GDP/capita low&      -0.300\sym{**} &       0.331\sym{***}&      -0.352\sym{***}&      -0.337\sym{***}\\
+   &     (0.098)         &     (0.031)         &     (0.094)         &     (0.098)         \\
+\addlinespace
+Log GDP low&      -0.151         &      0.021         &      -0.139         &     -0.026         \\
+   &     (0.112)         &     (0.027)         &     (0.168)         &     (0.065)         \\
+\addlinespace
+Affinity (UNGA)&      -1.007\sym{*}  &      -1.104\sym{***}&      -1.244\sym{*}  &      -1.404\sym{***}\\
+   &     (0.430)         &     (0.110)         &     (0.503)         &     (0.225)         \\
+\addlinespace
+Capability ratio&       0.848\sym{+}  &       0.993\sym{***}&       1.001\sym{*}  &       0.807\sym{+}  \\
+   &     (0.478)         &     (0.170)         &     (0.468)         &     (0.465)         \\
+\addlinespace
+Alliance (all types)&       0.202         &       0.726\sym{***}&       0.404\sym{*}  &       0.197         \\
+   &     (0.181)         &     (0.062)         &     (0.182)         &     (0.173)         \\
+\addlinespace
+Distance&    -0.008        &    -0.009         &      0.016         &      -0.133\sym{***}\\
+   &     (0.045)         &     (0.015)         &     (0.035)         &     (0.022)         \\
+\addlinespace
+Contiguity&       3.215\sym{***}&       1.400\sym{***}&       3.101\sym{***}&       3.325\sym{***}\\
+   &     (0.182)         &     (0.072)         &     (0.178)         &     (0.179)         \\
+\addlinespace
+Constant&       1.525         &      -4.635\sym{***}&       1.272         &      -1.013         \\
+   &     (2.205)         &     (0.594)         &     (2.947)         &     (1.376)         \\
+\midrule
+Distance&       0.258\sym{***}&       0.292\sym{***}&       0.252\sym{***}&       0.330\sym{***}\\
+   &     (0.045)         &     (0.015)         &     (0.053)         &     (0.091)         \\
+\addlinespace
+Log GDP low&      -0.480         &      -0.809\sym{***}&      -0.277         &      -3.464\sym{***}\\
+   &     (0.297)         &     (0.093)         &     (0.276)         &     (0.789)         \\
+\addlinespace
+Regime type difference&     -0.013         &     -0.019         &     -0.053         &       0.207         \\
+   &     (0.070)         &     (0.030)         &     (0.066)         &     (0.200)         \\
+\addlinespace
+Affinity (UNGA)&       1.121\sym{+}  &       1.758\sym{***}&       0.750         &       0.995         \\
+   &     (0.590)         &     (0.265)         &     (0.691)         &     (2.103)         \\
+\addlinespace
+Constant&       7.088         &       11.19\sym{***}&       4.385         &       51.51\sym{***}\\
+   &     (4.498)         &     (1.449)         &     (4.083)         &    (11.570)         \\
+\midrule
+Log $\alpha$&       3.028\sym{***}&       1.935\sym{***}&       2.729\sym{***}&       3.538\sym{***}\\
+   &     (0.256)         &     (0.067)         &     (0.304)         &     (0.092)         \\
+Vuong $(z)$&         2.15             &            7.04          &         2.35            &           4.49          \\
+Likelihood ratio $\chi^{2}$&      2,802.1\sym{***}         &      8,268.4\sym{***}         &      2,833.9\sym{***}         &      2,842.2\sym{***}         \\
+Log likelihood&          -4,488.336           &        -20,056.541             &            -4,472.410         &            -4,468.286          \\
+McFadden's pseudo R$^{2}$&       0.234              &      0.170                &     0.237                &    0.237                  \\
+Observations  &      145,903         &      145,903         &      145,903         &      145,903         \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize Robust standard errors in parentheses. Coefficients of ``peace years'' and splines not reported.}\\
+\multicolumn{5}{l}{\scriptsize All significance tests two-tailed. \sym{+} \(p<0.10\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\).}\\
+\end{tabular}
+\end{table}

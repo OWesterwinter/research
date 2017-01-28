@@ -1,0 +1,74 @@
+\begin{table}[htbp]\centering\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Robustness analysis population size (COPDAB, 1948-1978) \label{tabapp:populationcopdab}}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+   &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+   &\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Non.-mil. conflict}&\multicolumn{1}{c}{Mil. conflict}&\multicolumn{1}{c}{Mil. conflict}\\
+\midrule
+Dependence low&      -0.709         &       3.666\sym{**} &      -0.193         &      -1.303         \\
+   &     (8.573)         &     (1.394)         &     (8.225)         &     (8.590)         \\
+\addlinespace
+Dependence difference&       0.172         &                     &       0.556\sym{*}  &       0.469\sym{*}  \\
+   &     (0.113)         &                     &     (0.240)         &     (0.232)         \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &      0.014\sym{***}&                     \\
+ more dependent state  &                     &                     &     (0.004)         &                     \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &    -0.009\sym{+}  &                     \\
+ dependencies more dependent state  &                     &                     &     (0.004)         &                     \\
+\addlinespace
+Extra-dyadic dependencies&                     &                     &                     &     0.005\sym{+}  \\
+ less dependent state  &                     &                     &                     &     (0.003)         \\
+\addlinespace
+Dependence difference X extra-dyadic&                     &                     &                     &    -0.004\sym{+}  \\
+dependencies less dependent state   &                     &                     &                     &     (0.002)         \\
+\addlinespace
+Regime type low&      0.057\sym{*}  &      0.024\sym{**} &      0.056\sym{*}  &      0.056\sym{*}  \\
+   &     (0.026)         &     (0.009)         &     (0.026)         &     (0.026)         \\
+\addlinespace
+Regime type difference&       0.109\sym{***}&      0.047\sym{***}&       0.101\sym{***}&       0.106\sym{***}\\
+   &     (0.024)         &     (0.008)         &     (0.024)         &     (0.024)         \\
+\addlinespace
+Log GDP/capita low&      -0.210\sym{*}  &       0.348\sym{***}&      -0.289\sym{**} &      -0.239\sym{*}  \\
+   &     (0.095)         &     (0.031)         &     (0.091)         &     (0.102)         \\
+\addlinespace
+Log population low&       0.337\sym{***}&       0.586\sym{***}&       0.302\sym{***}&       0.309\sym{***}\\
+   &     (0.050)         &     (0.018)         &     (0.053)         &     (0.051)         \\
+\addlinespace
+Affinity (UNGA) &      -1.454\sym{***}&      -1.310\sym{***}&      -1.593\sym{***}&      -1.433\sym{***}\\
+   &     (0.212)         &     (0.069)         &     (0.205)         &     (0.212)         \\
+\addlinespace
+Capability ratio&       1.465\sym{**} &       2.128\sym{***}&       1.567\sym{***}&       1.237\sym{**} \\
+   &     (0.453)         &     (0.169)         &     (0.447)         &     (0.469)         \\
+\addlinespace
+Alliance (all types)&       0.243         &       0.793\sym{***}&       0.415\sym{*}  &       0.229         \\
+   &     (0.162)         &     (0.058)         &     (0.161)         &     (0.163)         \\
+\addlinespace
+Distance &     -0.071\sym{*}  &      -0.105\sym{***}&     -0.054         &     -0.094\sym{*}  \\
+   &     (0.035)         &     (0.007)         &     (0.036)         &     (0.042)         \\
+\addlinespace
+Contiguity&       3.290\sym{***}&       1.342\sym{***}&       3.184\sym{***}&       3.301\sym{***}\\
+   &     (0.183)         &     (0.073)         &     (0.178)         &     (0.186)         \\
+\addlinespace
+Constant&      -7.180\sym{***}&      -14.20\sym{***}&      -6.656\sym{***}&      -6.609\sym{***}\\
+   &     (1.011)         &     (0.387)         &     (1.044)         &     (1.105)         \\
+\midrule
+Distance&       0.134\sym{***}&      0.061         &       0.157\sym{***}&       0.119\sym{***}\\
+   &     (0.030)         &     (0.060)         &     (0.032)         &     (0.035)         \\
+\addlinespace
+Constant&      -0.548\sym{+}  &      -17.37\sym{***}&      -0.371\sym{+}  &      -0.710         \\
+   &     (0.288)         &     (0.203)         &     (0.216)         &     (0.447)         \\
+\midrule
+Log $\alpha$&       2.943\sym{***}&       2.121\sym{***}&       2.783\sym{***}&       3.032\sym{***}\\
+   &     (0.183)         &     (0.042)         &     (0.176)         &     (0.239)         \\
+Vuong $(z)$&            1.22         &              -0.00       &          1.48           &          0.83            \\
+Likelihood ratio $\chi^{2}$&      2,824.9\sym{***}         &      8,935.1\sym{***}         &      2,855.4\sym{***}         &      2,831.4\sym{***}         \\
+Log likelihood&              -4,476.921       &             -19,723.206         &           -4,461.688           &          -4,473.681            \\
+McFadden's pseudo R$^{2}$&       0.237              &      0.184               &               0.239       &         0.237            \\
+Observations &      145,903         &      145,903         &      145,903         &      145,903         \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize Robust standard errors in parentheses. Coefficients of ``peace years'' and splines not reported.}\\
+\multicolumn{5}{l}{\scriptsize All significance tests two-tailed. \sym{+} \(p<0.10\), \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\).}\\
+\end{tabular}
+\end{table}
